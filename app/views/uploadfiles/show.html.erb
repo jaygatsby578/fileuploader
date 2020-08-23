@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @uploadfile.name %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= link_to 'download', download_path(@uploadfile.id) %>
+</p>
+
+<%= link_to 'Back', uploadfiles_path %>
